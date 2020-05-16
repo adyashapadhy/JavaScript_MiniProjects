@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <title>ToDo List</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel='stylesheet' type='text/css'>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  </head>
+  <body>
+  <header>
+      <h1>Addy's Todo List</h1>
+  </header>
+  <form>
+      <input type="text" class= "todo-input">
+      <button class="todo-button" type="submit">
+          <i class= "fas fa-plus-square"></i>
+      </button>
+      <div class="select">
+          <select name="todos" class="filter-todo">
+           <option value=  "all">All</option> 
+           <option value=  "completed">Done!</option> 
+           <option value=  "uncompleted">Not Done!</option> 
+          </select>
+      </div>
+  </form>
+  <div class="todo-container">
+      <ul class="todo-list">
+          
+      </ul>
+  </div>
+  <script src="./main.js"></script>
+
+</body>
+</html>
