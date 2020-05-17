@@ -17,7 +17,7 @@ header {
 }
 
 header, form{
-    min-height: 20vh;
+    min-height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +35,7 @@ form input, form button {
 
 }
 
-form button{
+form button {
     color:#6807f9;
     background: white;
     cursor: pointer;
@@ -64,7 +64,7 @@ form button:hover {
     color: black;
     font-size: 1.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     transition: all 0.5s ease;
 }
