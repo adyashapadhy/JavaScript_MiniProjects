@@ -1,0 +1,78 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    /*background-image: linear-gradient(30deg, #ffacb7, #6807f9);*/
+    background: #ffe6eb;
+   
+    
+    
+}
+
+
+
+header {
+    font-size: 1.5rem;
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6886c5;
+
+}
+
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px,auto) repeat(5, 100px);
+}
+
+.calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid #f9f9f9;
+    outline: none;
+    background-color: #ffe0ac;
+
+}
+
+.caculator-grid > button:hover {
+    background-color:#6886c5;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+/* word-wrap allows to break lengthy words and wrap onto next line*/
+.output {
+    grid-column: 1/ -1;
+    background-color: #6886c5;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-operand {
+    color: #f9f9f9;
+    opacity: 75%;
+    font-size: 1.5rem;
+
+}
+
+.output .current-operand {
+    color: #f9f9f9;
+    font-size: 2.5rem;
+}
